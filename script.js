@@ -11,5 +11,4 @@ let text = document.getElementById('quote');
 text.innerHTML= generateRandomQuotes();
 };
 
-console.log(generateRandomQuotes());
-console.log(quotes[2]);
+alert("You're in the world of xdcoder.");
