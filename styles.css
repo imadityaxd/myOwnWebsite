@@ -110,6 +110,7 @@ ul{
 .services-list ul li{
     margin:10px;
     text-align: center;
+    border:solid 2px;
     
 }
 .services-list ul img{
