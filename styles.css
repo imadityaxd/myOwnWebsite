@@ -101,6 +101,12 @@ ul{
 .quotes button:hover{
     cursor:pointer;
 }
+
+.services-list ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
 /**ends here*/
 /*footer section starts from here */ 
 .footer{
