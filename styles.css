@@ -101,11 +101,20 @@ ul{
 .quotes button:hover{
     cursor:pointer;
 }
-
 .services-list ul{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
+
+}
+.services-list ul li{
+    margin:10px;
+    text-align: center;
+    
+}
+.services-list ul img{
+    width:90%;
+    border-radius: 10px;
 }
 /**ends here*/
 /*footer section starts from here */ 
