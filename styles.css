@@ -116,6 +116,13 @@ ul{
     width:90%;
     border-radius: 10px;
 }
+.freelancing img{
+    width:100%;
+}
+.freelancing{
+    justify-content: center;
+    margin: 10px 0;
+}
 /**ends here*/
 /*footer section starts from here */ 
 .footer{
