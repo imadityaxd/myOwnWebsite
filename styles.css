@@ -105,12 +105,11 @@ ul{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-
+    align-items: baseline;
 }
 .services-list ul li{
     margin:10px;
     text-align: center;
-    border:solid 2px;
     
 }
 .services-list ul img{
