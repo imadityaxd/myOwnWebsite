@@ -107,6 +107,7 @@ ul{
     justify-content:space-between;
     align-items: baseline;
     border-bottom: solid 2px;
+    border-radius: 10px;
 }
 .services-list ul li{
     margin:10px;
