@@ -124,14 +124,18 @@ ul{
 .freelancing{
     justify-content: center;
     margin: 10px 0;
-    text-align: center;
 }
 .freelancing .heading{
-    font-size: 48px;
-    margin: 20px;
-    padding:20px;
+    font-size: 36px;
+    margin:20px;
+    padding: 20px 0 0 0;
+    font-style:bold;
+    font-weight: 900;
+}
+.freelancing span{
     font-style: bold;
-    text-align: center;
+    font-size: 18px;
+    margin:0 20px;
 }
 /**ends here*/
 /*footer section starts from here */ 
