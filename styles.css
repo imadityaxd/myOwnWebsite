@@ -106,6 +106,7 @@ ul{
     flex-direction:row;
     justify-content:space-between;
     align-items: baseline;
+    border-bottom: solid 2px;
 }
 .services-list ul li{
     margin:10px;
@@ -122,6 +123,14 @@ ul{
 .freelancing{
     justify-content: center;
     margin: 10px 0;
+    text-align: center;
+}
+.freelancing .heading{
+    font-size: 48px;
+    margin: 20px;
+    padding:20px;
+    font-style: bold;
+    text-align: center;
 }
 /**ends here*/
 /*footer section starts from here */ 
