@@ -58,3 +58,16 @@ a:link {
 .carousel2 .text #xd{
     letter-spacing: 1px;
 }
+
+/** On blog page **/
+.content1{
+    margin:20px;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top-image{
+    width:70%;
+}
