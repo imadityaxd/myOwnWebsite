@@ -61,7 +61,7 @@ body{
     float:right;
     border-radius: 24px;
 }
-ul{
+.text ul{
     list-style-type: none;
 }
 .hero .text ul a{
