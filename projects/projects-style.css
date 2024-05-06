@@ -1,0 +1,42 @@
+.hero{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:40px;
+    align-items: center;
+    height:30vh;
+}
+.hero span#first{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.hero h1.title{
+    font-size: 72px;
+}
+.hero span#second{
+    letter-spacing: 1px;
+}
+.cards ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: baseline;
+    text-align: center;
+}
+.cards ul li{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    margin: 10px;
+    align-items: center;
+}
+.cards li span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top:5px;
+    letter-spacing: 1px;
+}
+.cards li img{
+    width: 90%;
+    border-radius:10px;
+}
