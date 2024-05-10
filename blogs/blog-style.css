@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald|Roboto|Slabo+27px);
 @import 'bourbon';
+
 .hero{
     display:flex;
     flex-direction: column;
@@ -33,6 +34,10 @@
     align-items: center;
     cursor:pointer;
     transition: transform 0.3s ease;
+    width: 33%;
+}
+.cards ul li a:link, .cards ul li a:visited{
+    color:black;
 }
 .cards ul li:hover{
     transform:scale(1.05);
@@ -122,7 +127,48 @@ a:link, a:visited {
     font-size: 90%;
 }
 /***/
+/**section2*/
+.section2{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    background-color: rgb(224, 224, 224);
+    margin-top:20px;
+}
+.sidebar {
+    width:30%;
+    margin:40px 20px 20px 20px;
+   
+}
+.sidebar .first{
+    margin-right: 20px;
+    padding:10px;
+    border-bottom: solid 2px gray;
+}
+.sidebar .second{
+    height:90vh;
+    overflow-y: auto;
+}
+.sidebar ul{
+    padding: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    list-style: none;
+    opacity: 0.9;
+}
+.sidebar ul li:hover{
+    transform: scale(1.05);
+    font-weight: 600;
+}
+.card-content-2{
+    padding:0 40px;
+    background-color: white;
+    width: 100%;
+}
 
+/**/
 /** On blog page **/
 .content1{
     margin:20px;
@@ -134,7 +180,7 @@ a:link, a:visited {
 }
 .content1 h1{
     font-size: 48px;
-
+    text-align: center;
 }
 .content1 p{
     font-size:18px;
@@ -148,7 +194,7 @@ a:link, a:visited {
 }
 
 .top-image{
-    width:70%;
+    width:80%;
     margin:20px;
 }
 .content2 ol > li{
@@ -174,16 +220,13 @@ a:link, a:visited {
     margin-top:10px;
     font-weight: 600;
 }
-
-p.last{
+.links{
+    justify-content: center;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center !important;
+    font-size: 24px;
+    font-weight: 600;
 }
-p.last a:link{
-    color:blue;
-}
-p.last a:visited{
+.links a:visited, a:link{
     color:blue;
 }

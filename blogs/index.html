@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>xdCoder - Blogs</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="blog-style.css">
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="blog-style.css" />
 </head>
+
 <body>
-    <div class = "navbar" id ="navbar">
-        <div class = "logo">
-            xdCoder
+    <div class="navbar" id="navbar">
+        <div class="logo">
+            <a href="../index.html">xdCoder</a>
         </div>
-        <div class="nav-links">
-            <ul>
-                <li><a href="../index.html" >Home</a></li>
-                <li><a href="../projects/index.html">Projects</a></li>
-                <li><a href="./index.html" class="active">Blog</a></li>
-                <li><a href="#">About Me</a></li>
+        <ul class="menuList" id="menuList">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href=".index.html" class="active">Blog</a></li>
+            <li><a href="#">About Me</a></li>
         </ul>
+        <div class="menu-btn" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
         </div>
-        <div class="btn-1">Hire Me</div>
     </div>
     <div class="hero">
         <span id="first">Programming Blog</span>
         <h1 class="title">Learn to Code</h1>
-        <span id="second">I'm not master of anything, but learning new programming languages.</span>
+        <span id="second">I'm not master of anything, but learning new programming
+            languages.</span>
     </div>
     <div class="main-section">
         <div class="idle"></div>
@@ -33,75 +36,252 @@
         <div class="main">
             <div class="cards">
                 <ul>
-                    <li><img src="./pics/webdevelopment.jpg" alt=""><span>Web Development</span></li>
-                    <li><img src="./pics/Data-Structures-and-Algorithms.jpg" alt=""><span>Data Structures & Algorithms</span></li>
-                    <li><img src="./pics/linux.jpeg" alt=""><span>Linux</span></li>
+                    <li>
+                        <a href="./web-development.html">
+                            <img src="./pics/webdevelopment.jpg" alt="web development" />
+                                <span>Web Development</span></a>
+                    </li>
+                    <li>
+                        <a href="./data-structures-and-algorithms.html">
+                            <img src="./pics/Data-Structures-and-Algorithms.jpg" alt="dsa" />
+                                <span>Data Structures & Algorithms</span></a>
+                    </li>
+                    <li>
+                        <a href="./linux.html">
+                        <img src="./pics/linux.jpeg" alt="linux" />
+                        <span>Linux</span></a>
+                    </li>
                 </ul>
             </div>
-            <a href="./first-blog.html"><div class="carousel2">
-                <img src="../10.png" alt="">
-                <div class="text">
-                    <span id="xd">xdBlogs</span>
-                    <h1 class="xdtitle">FullStack Web Developer Roadmap (2024)</h1>
-                    <p>Web Developer/Full Stack Developer - How do you feel when you tag yourself with these titles? The journey is long and full of distraction but xdCoder is here to help through your journey... </p>
-                </div>
-            </div>
-        </a>
-        <div class="blog-wrapper">
-            <div class="blog-card">
-                <div class="card-header">
-                    <img src="./pics/brain-programmer.JPG" alt="">
-                    <h3> How to be a great software engineer without using your brain.</h3>
-                </div>
-                <div class="card-text">
-                    <div class="info">
-                        <ul>
-                            <li>May 04, 2024</li>
-                            <li>xdcoder</li>
-                        </ul>
+            <a href="./web-development-blogs/webdeveloper-roadmap-2024.html">
+                <div class="carousel2">
+                    <img src="../10.png" alt="" />
+                    <div class="text">
+                        <span id="xd">xdBlogs</span>
+                        <h1 class="xdtitle">FullStack Web Developer Roadmap (2024)</h1>
+                        <p>
+                            Web Developer/Full Stack Developer - How do you feel when you
+                            tag yourself with these titles? The journey is long and full of
+                            distraction but xdCoder is here to help through your journey...
+                        </p>
                     </div>
-                    <p>Learn how to be a successful software engineer without using excessive brainpower. Discover work methodologies and practices that can help simplify complexity. Explore the difference between TDD and BDD.</p>
                 </div>
-            </div>
-            <div class="blog-card">
-                <div class="card-header">
-                    <img src="./pics/javascript-animation.jpg" alt="">
-                    <h3>Incredible JavaScript Animation Libraries</h3>
-                </div>
-                <div class="card-text">
-                    <div class="info">
-                        <ul>
-                            <li>May 04, 2024</li>
-                            <li>xdcoder</li>
-                        </ul>
-                    </div>
-                    <p>JavaScript animation libraries simplify the animation process, enhance user experience, and boost website traffic. GSAP, Anime.js, Three.js, Popmotion.io, and React-spring are some popular libraries.</p>
-                </div>
-            </div>
-            <div class="blog-card">
-                <div class="card-header">
-                    <img src="./pics/minifying-css.jpg" alt="">
-                    <h3>Why don’t we talk about minifying CSS anymore?</h3>
-                </div>
-                <div class="card-text">
-                    <div class="info">
-                        <ul>
-                            <li>May 04, 2024</li>
-                            <li>xdcoder</li>
-                        </ul>
-                    </div>
-                    <p>Minifying CSS is less talked about due to improvements in delivery and optimization with modern tech stacks. Minifying CSS helps optimize First Contentful Paint (FCP) and the critical render path...</p>
-                </div>
-            </div>
-        </div>
+            </a>
         </div>
         <!---main section ends here-->
         <div class="idle"></div>
     </div>
+    <div class="section2">
+        <div class="sidebar">
+            <div class="first">
+                <h3>Some blogs for you</h3>
+            </div>
+            <div class="second">
+                <ul>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li>Trending Blogs</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="card-content-2">
+            <div class="blog-wrapper">
+                <div class="blog-card">
+                    <div class="card-header">
+                        <img src="./pics/brain-programmer.JPG" alt="" />
+                        <h3>
+                            How to be a great software engineer without using your brain.
+                        </h3>
+                    </div>
+                    <div class="card-text">
+                        <div class="info">
+                            <ul>
+                                <li>May 04, 2024</li>
+                                <li>xdcoder</li>
+                            </ul>
+                        </div>
+                        <p>
+                            Learn how to be a successful software engineer without using
+                            excessive brainpower. Discover work methodologies and practices
+                            that can help simplify complexity. Explore the difference
+                            between TDD and BDD.
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="card-header">
+                        <img src="./pics/javascript-animation.jpg" alt="" />
+                        <h3>Incredible JavaScript Animation Libraries</h3>
+                    </div>
+                    <div class="card-text">
+                        <div class="info">
+                            <ul>
+                                <li>May 04, 2024</li>
+                                <li>xdcoder</li>
+                            </ul>
+                        </div>
+                        <p>
+                            JavaScript animation libraries simplify the animation process,
+                            enhance user experience, and boost website traffic. GSAP,
+                            Anime.js, Three.js, Popmotion.io, and React-spring are some
+                            popular libraries.
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="card-header">
+                        <img src="./pics/minifying-css.jpg" alt="" />
+                        <h3>Why don’t we talk about minifying CSS anymore?</h3>
+                    </div>
+                    <div class="card-text">
+                        <div class="info">
+                            <ul>
+                                <li>May 04, 2024</li>
+                                <li>xdcoder</li>
+                            </ul>
+                        </div>
+                        <p>
+                            Minifying CSS is less talked about due to improvements in
+                            delivery and optimization with modern tech stacks. Minifying CSS
+                            helps optimize First Contentful Paint (FCP) and the critical
+                            render path...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-wrapper">
+                <div class="blog-card">
+                    <div class="card-header">
+                        <img src="./pics/brain-programmer.JPG" alt="" />
+                        <h3>
+                            How to be a great software engineer without using your brain.
+                        </h3>
+                    </div>
+                    <div class="card-text">
+                        <div class="info">
+                            <ul>
+                                <li>May 04, 2024</li>
+                                <li>xdcoder</li>
+                            </ul>
+                        </div>
+                        <p>
+                            Learn how to be a successful software engineer without using
+                            excessive brainpower. Discover work methodologies and practices
+                            that can help simplify complexity. Explore the difference
+                            between TDD and BDD.
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="card-header">
+                        <img src="./pics/javascript-animation.jpg" alt="" />
+                        <h3>Incredible JavaScript Animation Libraries</h3>
+                    </div>
+                    <div class="card-text">
+                        <div class="info">
+                            <ul>
+                                <li>May 04, 2024</li>
+                                <li>xdcoder</li>
+                            </ul>
+                        </div>
+                        <p>
+                            JavaScript animation libraries simplify the animation process,
+                            enhance user experience, and boost website traffic. GSAP,
+                            Anime.js, Three.js, Popmotion.io, and React-spring are some
+                            popular libraries.
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="card-header">
+                        <img src="./pics/minifying-css.jpg" alt="" />
+                        <h3>Why don’t we talk about minifying CSS anymore?</h3>
+                    </div>
+                    <div class="card-text">
+                        <div class="info">
+                            <ul>
+                                <li>May 04, 2024</li>
+                                <li>xdcoder</li>
+                            </ul>
+                        </div>
+                        <p>
+                            Minifying CSS is less talked about due to improvements in
+                            delivery and optimization with modern tech stacks. Minifying CSS
+                            helps optimize First Contentful Paint (FCP) and the critical
+                            render path...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!---footer-->
-    <div class ="footer">
+    <div class="footer">
         <div class="text2">I am the chosen one.</div>
     </div>
 
+    <script src="../script.js"></script>
+    <script src="https://kit.fontawesome.com/4d5d59aedf.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

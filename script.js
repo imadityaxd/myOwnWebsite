@@ -6,9 +6,13 @@ function generateRandomQuotes() {
     return quotes[quote];
 };
 
-function displayQuote(){
-let text = document.getElementById('quote');
-text.innerHTML= generateRandomQuotes();
-};
-
-alert("You're in the world of xdcoder.");
+let menuList = document.getElementById('menuList')
+    menuList.style.maxHeight="0px";
+function toggleMenu(){
+    if(menuList.style.maxHeight=="0px"){
+        menuList.style.maxHeight="300px";
+    }
+    else{
+        menuList.style.maxHeight="0px";
+    }
+}

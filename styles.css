@@ -1,9 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 *{
     margin:0;
     padding:0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 body{
     background-color: rgb(209, 207, 204);
@@ -18,44 +23,42 @@ body{
     position: sticky;
     box-shadow: rgba(0, 0, 0, 0.356) 0 2px 5px;
 }
-.logo{
+.logo a{
     font-size: 24px;
     color:antiquewhite;
     font-weight: bold;
+    text-decoration: none;
 }
-.nav-links ul{
+.logo a:visited, .logo a:link{
+    color:antiquewhite;
+}
+ul.menuList{
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
 }
-.nav-links li{
+.menuList li{
     padding:10px 18px;
     transition: transform 0.2s ease;
     font-size: 20px;
 }
-.nav-links li a{
+.menuList li a{
     text-decoration: none;
     color:antiquewhite;
 }
 
-
-.btn-1{
-    font-size: 20px;
-    color:antiquewhite;
-    font-weight: bold;
-    border: solid 2px;
-    padding: 10px;
-    border-radius: 10px;
-}
-.nav-links li .active {
+.menuList li .active {
     background-color: antiquewhite;
     color:rgb(48, 9, 9);
     padding:10px 18px;
     border-radius: 10px;
 }
-.nav-links ul li:hover{
+.menuList ul li:hover{
     transform: scale(1.15);
+}
+.menu-btn{
+    display: none;
 }
 
 /* hero section */
@@ -169,4 +172,22 @@ body{
     color: antiquewhite;
     align-items: center;
     text-align: center;
+}
+
+/*for mobile screen*/
+@media (max-width:800px){
+    .navbar{
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+     ul{
+        flex-direction: column;
+        margin-top: 40px;
+        overflow: hidden;
+    }
+    .menu-btn{
+        color:white;
+        display: block;
+    }
 }
