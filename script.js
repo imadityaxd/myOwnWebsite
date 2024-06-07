@@ -1,4 +1,4 @@
-const quotes = ["I am the chosen one.", "Keep playing.", "Learn the game.", "Know the game.", "Don't let your guard down.", "If nobody hates you, you're simply bad at what you do."];
+const quotes = ["I am the chosen one.","Peaceful life is a myth." ,"Keep playing.", "Learn the game.", "Know the game.", "Don't let your guard down.", "If nobody hates you, you're simply bad at what you do."];
 
 function generateRandomQuotes() {
 
